@@ -1,0 +1,260 @@
+/* box */
+.garu-ini {
+  background-color: #0c0c0d;
+  width: 48rem;
+  margin: 25px auto;
+  border-radius: 30px;
+  box-shadow: 3px -3px 3px white;
+
+  transition: ease-in-out 2s 0s;
+}
+/* faixas */
+.garu-ini img {
+  height: 25rem;
+  width: 36rem;
+  margin-left: 12rem;
+  margin-top: -1px;
+  z-index: 2;
+  position: relative;
+}
+
+/* linha branca */
+.garu-title {
+  background-color: rgb(255, 255, 255);
+  height: 4.4rem;
+  width: 41.9rem;
+  border-radius: 2px;
+  margin: auto 0 0 100px;
+  margin-top: -16rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: -2px 2px 20px rgb(0, 0, 0);
+  transition: ease-in-out 2s 0s;
+}
+
+.garu-title2 {
+  color: rgb(0, 0, 0);
+  margin: auto;
+  text-align: right;
+  font-size: 2.5rem;
+  padding: 10px;
+  font-family: "Girassol", serif;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(0, 0, 0);
+  transition: ease-in-out 2s 0s;
+}
+/* bakuton */
+.garu-img img {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.28);
+  margin: -9.2rem auto auto 1.5rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px -2px 240px rgb(0, 0, 0);
+  filter:grayscale();
+  transition: ease-in-out 2s 0s;
+  overflow: hidden;
+}
+
+.garu-img img:hover {
+  transition: 7s ease-in-out;
+  box-shadow: -20px -20px 20em rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 1);
+  transform: rotate(50turn);
+  filter:none;
+}
+
+/* lateral */
+.garu-lateral {
+  position: relative;
+  align-items: center;
+  margin: -2rem auto auto 1.5rem;
+  width: 8.7rem;
+  height: 22rem;
+  float:left;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px rgb(255, 255, 255);
+  transition: ease-in-out 2s 0s;
+  border-radius: 6px;
+}
+
+.garu-tlateral {
+  color: #fff;
+  padding: -1px 1px 0 1px;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.status-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 7px;
+  font-family: "Courier Prime", monospace;
+  color: white;
+  padding: 15px;
+  width: fit-content;
+  margin: auto -7px;
+  transition: ease-in-out 2s 0s;
+}
+
+/* parte textual */
+.garu-corpo {
+  background-color: #0c0c0d;
+  width: 34rem;
+  margin: -22rem auto 1.25rem 11.25rem;
+  padding: 20px;
+  border-radius: 0 0 2% 20px;
+  display: inline-block;
+  position: relative;
+  z-index: auto;
+  box-shadow: -3px 3px 3px rgb(255, 255, 255);
+  transition: ease-in-out 2s 0s;
+}
+
+/* formatação das letras */
+.garu-texto {
+  color: rgb(230, 230, 230);
+  font-size: 1.25rem;
+  font-family: "Spectral";
+  text-align: justify;
+  line-height: 1.45;
+  margin: auto;
+  padding: 20px 0 20px 0;
+  transition: ease-in-out 2s 0s;
+}
+
+.garu-texto::first-letter {
+  margin-left: 50px;
+}
+
+/* transições */
+body:has(.garu-img img:hover) .garu-texto {
+  text-shadow: 2px 2px 5px rgb(229, 78, 14);
+  color: rgb(200, 122, 122);
+  transition: ease-in-out 2s 5s;
+}
+
+body:has(.garu-img img:hover) #Garu {
+  opacity:0%;
+  transition: ease-in-out 5s 7s;
+}
+
+body:has(.garu-img img:hover) body {
+  opacity:0%;
+  transition: ease-in-out 5s 7s;
+}
+
+body:has(.garu-img img:hover) .garu-title2 {
+  color: rgb(190, 53, 25);
+  box-shadow: -20px -20px 200em rgb(255, 0, 0);
+  transition: ease-in-out 2s 5s;
+}
+
+body:has(.garu-img img:hover) .garu-ini {
+  box-shadow: -20px -20px 200em rgb(255, 0, 0);
+  transition: ease-in-out 2s 5s;
+}
+
+body:has(.garu-img img:hover) .status-container {
+  text-shadow: 2px 2px 5px rgb(229, 50, 14);
+  color: rgb(200, 122, 122);
+  transition: ease-in-out 2s 5s;
+  box-shadow: -20px -20px 200em rgb(255, 0, 0);
+}
+
+body:has(.garu-img img:hover) .garu-lateral {
+  box-shadow: -3px 3px 30px rgb(255, 53, 53);
+  transition: ease-in-out 2s 5s;
+}
+
+body:has(.garu-img img:hover) .garu-corpo {
+  box-shadow: 3px -3px 30px rgb(255, 53, 53);
+  transition: ease-in-out 2s 5s;
+}
+
+body:has(.garu-img img:hover) .garu-extra {
+  background-position: 0px -26rem;
+  box-shadow: 0px 40px 70px rgb(130, 25, 25);
+  filter: drop-shadow(0px 40px 70px rgb(130, 25, 25));
+  height: 450px;
+}
+
+body:has(.garu-img img:hover) a {
+color: #ff0000;
+}
+
+body:has(.garu-img img:hover) #cred {
+color: #ff0000;
+  margin: -15px 65%;
+}
+
+
+
+/* parte extra imagem inferior */
+.garu-extra {
+  width: auto;
+  height: 10rem;
+  border-radius: 6px;
+  margin: auto;
+  box-shadow: 3px -3px 3px rgb(255, 255, 255);
+  background-image: url("/download.jpg");
+  background-position: 0px -6.25rem;
+  background-size: 35.6rem auto;
+  position: relative;
+  align-items: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: 5s ease-in-out;
+  transition-timing-function: cubic-bezier(0.5, 0.1, 0.2, 1);
+  color: black;
+  font-family: 'Girassol';
+  font-size: 3.1rem;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255),
+    3px 3px 0.2em rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+.garu-extra::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.extra-text {
+  display: inline-block;
+  padding: 10px;
+  font-family: 'Spectral';
+  font-size: 1.25rem;
+}
+
+.cred {
+width: auto;
+  margin: -1.8rem auto 2rem 0;
+  text-align: center;
+  transition: 5s ease-in-out;
+  
+}
+
+.cred > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+font-family: 'Girassol';
+  transition: 5s ease-in-out;
+  text-shadow: -200px 0px 0px rgb(255, 255, 255);
+}
+
+summary {
+  color: white;
+  list-style-type: none;
+}
+
+details {
+  color: white;
+}
