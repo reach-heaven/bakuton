@@ -46,12 +46,11 @@
   text-align: right;
   font-size: 2.5rem;
   padding: 3px;
-  font-family: "Girassol", serif;
+  font-family: "Abril Fatface", serif;
   letter-spacing: 4px;
   line-height: 4rem;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(255, 255, 255),
     0 0 0.2em rgb(0, 0, 0);
-  transition: ease-in-out 2s 0s;
 }
 /* bakuton */
 .garu-img img {
@@ -126,13 +125,12 @@
 /* formatação das letras */
 .garu-texto {
   color: rgb(230, 230, 230);
-  font-size: 1.25rem;
-  font-family: "Spectral";
+  font-size: 1.8rem;
+  font-family: "Moderustic";
   text-align: justify;
-  line-height: 1.45;
+  line-height: 1.4;
   margin: 2rem auto 0.2rem auto;
   padding: 20px 0 20px 0;
-  transition: ease-in-out 2s 0s;
 }
 
 .garu-texto::first-letter {
@@ -201,8 +199,6 @@ color: #ff0000;
   margin: -15px 65%;
 }
 
-
-
 /* parte extra imagem inferior */
 .garu-extra {
   width: auto;
@@ -220,7 +216,7 @@ color: #ff0000;
   transition: 5s ease-in-out;
   transition-timing-function: cubic-bezier(0.5, 0.1, 0.2, 1);
   color: black;
-  font-family: 'Girassol';
+  font-family: 'Abril Fatface';
   font-size: 3.1rem;
   text-shadow: 2px 2px 3px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255),
     3px 3px 0.2em rgb(255, 255, 255);
@@ -246,7 +242,7 @@ color: #ff0000;
 .extra-text {
   display: inline-block;
   padding: 10px;
-  font-family: 'Spectral';
+  font-family: 'Moderustic';
   font-size: 1.25rem;
 }
 
