@@ -1,11 +1,19 @@
 /* box */
+
+#Garu {
+  width: 48rem;
+  margin: 0 auto;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  border-radius: 30px;
+  background-color: black;
+}
+
 .garu-ini {
   background-color: #0c0c0d;
   width: 48rem;
   margin: 25px auto;
   border-radius: 30px;
-  box-shadow: 3px -3px 3px white;
-
+  box-shadow: 3px 3px 1px black;
   transition: ease-in-out 2s 0s;
 }
 /* faixas */
@@ -133,19 +141,16 @@
 
 /* transições */
 body:has(.garu-img img:hover) .garu-texto {
-  text-shadow: 2px 2px 5px rgb(229, 78, 14);
+  text-shadow: 2px 2px 20px rgb(229, 78, 14);
   color: rgb(200, 122, 122);
   transition: ease-in-out 2s 5s;
 }
 
 body:has(.garu-img img:hover) #Garu {
-  opacity:0%;
-  transition: ease-in-out 5s 7s;
-}
-
-body:has(.garu-img img:hover) body {
-  opacity:0%;
-  transition: ease-in-out 5s 7s;
+  filter:saturate(1000%) contrast(800%);
+  box-shadow: -20px -20px 200em rgb(255, 168, 168), 20px 20px 200em rgb(255, 0, 0);
+  transition: ease-in-out 2s 5s;
+  width: 56rem;
 }
 
 body:has(.garu-img img:hover) .garu-title2 {
@@ -154,33 +159,37 @@ body:has(.garu-img img:hover) .garu-title2 {
   transition: ease-in-out 2s 5s;
 }
 
-body:has(.garu-img img:hover) .garu-ini {
+body:has(.garu-img img:hover) .garu-ini>img {
   box-shadow: -20px -20px 200em rgb(255, 0, 0);
   transition: ease-in-out 2s 5s;
+  width: 40rem;
 }
 
 body:has(.garu-img img:hover) .status-container {
-  text-shadow: 2px 2px 5px rgb(229, 50, 14);
+  text-shadow: 2px 2px 5px rgb(216, 86, 61);
   color: rgb(200, 122, 122);
   transition: ease-in-out 2s 5s;
-  box-shadow: -20px -20px 200em rgb(255, 0, 0);
+  box-shadow: -20px -20px 200em rgb(230, 187, 187);
 }
 
 body:has(.garu-img img:hover) .garu-lateral {
-  box-shadow: -3px 3px 30px rgb(255, 53, 53);
+  box-shadow: -3px 3px 300px rgb(255, 53, 53);
   transition: ease-in-out 2s 5s;
 }
 
 body:has(.garu-img img:hover) .garu-corpo {
-  box-shadow: 3px -3px 30px rgb(255, 53, 53);
+  box-shadow: 3px -3px 300px rgb(254, 136, 0);
+  background-color: rgb(255, 0, 0);
   transition: ease-in-out 2s 5s;
 }
 
 body:has(.garu-img img:hover) .garu-extra {
   background-position: 0px -26rem;
-  box-shadow: 0px 40px 70px rgb(130, 25, 25);
+  box-shadow: 0px 40px 700px rgb(86, 7, 7);
   filter: drop-shadow(0px 40px 70px rgb(130, 25, 25));
   height: 450px;
+  color: #ff0000;
+  transition: ease-in-out 2s 5s;
 }
 
 body:has(.garu-img img:hover) a {
@@ -201,7 +210,7 @@ color: #ff0000;
   border-radius: 6px;
   margin: auto;
   box-shadow: 3px -3px 3px rgb(255, 255, 255);
-  background-image: url("/download.jpg");
+  background-image: url("https://i.imgur.com/kNrb5QP.jpeg");
   background-position: 0px -6.25rem;
   background-size: 35.6rem auto;
   position: relative;
@@ -219,6 +228,13 @@ color: #ff0000;
     padding: 10px;
 }
 
+
+.garu-extra:hover {
+  background-position: 0px -26rem;
+  height: 450px;
+}
+
+
 .garu-extra::before {
   content: "";
   position: absolute;
@@ -235,19 +251,19 @@ color: #ff0000;
 }
 
 .cred {
-width: auto;
-  margin: -1.8rem auto 2rem 0;
+width: 49rem;
+  margin: -2rem auto 2rem auto;
   text-align: center;
   transition: 5s ease-in-out;
-  
+    position: absolute;
 }
 
 .cred > a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(107, 107, 107);
 font-family: 'Girassol';
   transition: 5s ease-in-out;
-  text-shadow: -200px 0px 0px rgb(255, 255, 255);
+  text-shadow: -10px -10px 1px rgb(255, 255, 255);
 }
 
 summary {
